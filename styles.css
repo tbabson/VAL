@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Fallback color */
+  background-image: url("valbg.jpg"); /* Add your image path here */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: #333;
+}
+
+header {
+  /* Semi-transparent background */
+  color: #a50404;
+  padding: 20px 0;
+  text-align: center;
+  width: 0 auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 1200px;
+  margin: 20px auto 5rem; /* Adds some margin for better spacing */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  flex: 1 1 60%;
+  padding-right: 20px;
+}
+
+.text h2 {
+  margin-top: 0;
+}
+
+.text h2 span {
+  color: rgb(129, 0, 0);
+  font-family: "Pacifico", serif;
+}
+
+.text h3 span {
+  font-size: 1.6rem;
+  color: rgb(129, 0, 0);
+  font-family: "Pacifico", serif;
+}
+
+.image {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+  @media (min-width: 768px) {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+footer {
+  background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
